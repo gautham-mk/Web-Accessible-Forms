@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  width : 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.form-group {
+  margin-right : 20px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="date"] {
+  font-size: 14px; /* Larger text for date input */
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+/* Make buttons more accessible */
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Ensure inputs and buttons have visible focus */
+input:focus, button:focus, select:focus {
+  outline: 3px solid #0b519b;
+  border-radius: 5px;
+}
+
+.region-container {
+  display: flex;
+  gap : 10px;
+  justify-content: space-evenly;
+}
+
+button:focus {
+  background-color: #0056b3;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.mic-button {
+  background: #b3b3b3;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.mic-container {
+  display: flex;
+  width : 20%;
+  align-items: center;
+  justify-content: flex-start;
+  gap : 20px;
+}
+
+.mic-button:hover {
+  background: #0056b3;
+  color : white;
+}
+
+/* Active listening state */
+.mic-button.active {
+  background: red;
+  color: white;
+}
